@@ -3,7 +3,7 @@
 #include <string.h>
 
 int main() {
-	int rll, crsn, crdt, scr=0;
+	int rll, crsn, crdt, scr=0, attp=1;
 	double grd, gsc=0, sgsc=0, cgpa;
 	char nm[20];
 	printf("Your name : ");
@@ -12,9 +12,11 @@ int main() {
 	scanf("%d", &rll);
 	printf("Number of courses taken : ");
 	scanf("%d", &crsn);
-	printf("put Individual course grade and then course credit with a space for all the %d courses", crsn);
+	printf("put Individual course grade and then course credit with a space for all the %d courses\n", crsn);
 	for (crsn>0; crsn--;)
 	{
+		printf("Course %d : ", attp);
+		attp++;
 		scanf("%lf %d", &grd, &crdt);
 		gsc=grd*crdt;
 		sgsc=sgsc+gsc;
