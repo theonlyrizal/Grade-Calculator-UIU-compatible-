@@ -5,7 +5,7 @@
 int main() {
 	int rll, crsn, crdt, scr=0, attp=1;
 	double grd, gsc=0, sgsc=0, cgpa;
-	char nm[20];
+	char nm[100];
 	printf("Your name : ");
 	scanf("%s", nm);
 	printf("Roll: 0112");
